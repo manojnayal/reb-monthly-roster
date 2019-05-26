@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS employee;
+CREATE TABLE IF NOT EXISTS employee (
+  emp_Id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  emp_Name varchar(20) DEFAULT NULL,
+  PRIMARY KEY (emp_Id)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS shiftDetails;
+CREATE TABLE IF NOT EXISTS shiftdetails (
+shift_Id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  emp_Id int(11) DEFAULT NULL,
+  shift_Date date DEFAULT NULL,
+  shift varchar(20) DEFAULT NULL,
+  PRIMARY KEY (shift_Id)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
